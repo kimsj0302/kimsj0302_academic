@@ -103,9 +103,11 @@
         "Seungyong Lee"
       ],
       "venue": "Workshop on Image Processing and Image Understanding (IPIU), 2024",
-      "thumbnail": "images/thumbs/uvh-tensorf.svg",
+      "thumbnail": "images/thumbs/uvh-tensorf.png",
       "award": "",
-      "links": {},
+      "links": {
+        "pdf": "assets/uvh-TensoRF_IPIU2024.pdf"
+      },
       "domestic": 1
     },
     {
@@ -115,9 +117,11 @@
         "Seungyong Lee"
       ],
       "venue": "Korea Computer Graphics Society Conference (KCGS), 2022",
-      "thumbnail": "images/thumbs/texture-recon.svg",
+      "thumbnail": "images/thumbs/texture-recon.png",
       "award": "",
-      "links": {},
+      "links": {
+        "pdf": "assets/TextureReconstruction_KCGS2022.pdf"
+      },
       "domestic": 1
     },
     {
@@ -130,9 +134,11 @@
         "Sunghyun Cho"
       ],
       "venue": "Workshop on Image Processing and Image Understanding (IPIU), 2022",
-      "thumbnail": "images/thumbs/gc-nerf.svg",
+      "thumbnail": "images/thumbs/gc-nerf.png",
       "award": "",
-      "links": {},
+      "links": {
+        "pdf": "assets/GC-NeRF_IPIU2022.pdf"
+      },
       "domestic": 1
     }
   ]

@@ -1,0 +1,139 @@
+{
+  "publications": [
+    {
+      "title": "High-Quality Geometry and Texture Editing of Neural Radiance Field",
+      "authors": [
+        "Soongjin Kim",
+        "Jooeun Son",
+        "Gwangjin Ju",
+        "Joo Ho Lee",
+        "Seungyong Lee"
+      ],
+      "venue": "Pacific Graphics (PG) Conference Proceedings, 2024",
+      "thumbnail": "images/thumbs/nerf-editing.png",
+      "award": "",
+      "links": {
+        "pdf": "https://diglib.eg.org/items/349c3983-2bbb-4793-acc4-32d273b33a74",
+        "code": "https://github.com/kimsj0302/uvhnerf"
+      },
+      "domestic": 0
+    },
+    {
+      "title": "Inverse Rendering of Translucent Objects with Shape-Adaptive Importance Sampling",
+      "authors": [
+        "Jooeun Son",
+        "Yucheol Jung",
+        "Gyeongmin Lee",
+        "Soongjin Kim",
+        "Joo Ho Lee",
+        "Seungyong Lee"
+      ],
+      "venue": "Pacific Graphics (PG) Conference Proceedings, 2024",
+      "thumbnail": "images/thumbs/translucent.png",
+      "award": "",
+      "links": {
+        "pdf": "https://diglib.eg.org/items/f57860ef-ec70-44ec-8b02-eddc36dff67b",
+        "code": "https://github.com/spock-the-wizard/shapeAdaptiveIR",
+        "project": "https://spock-the-wizard.github.io/shape-adaptive-IR/"
+      },
+      "domestic": 0
+    },
+    {
+      "title": "Deep Cost Ray Fusion for Sparse Depth Video Completion",
+      "authors": [
+        "Jungeon Kim",
+        "Soongjin Kim",
+        "Jaesik Park",
+        "Seungyong Lee"
+      ],
+      "venue": "European Conference on Computer Vision (ECCV), 2024",
+      "thumbnail": "images/thumbs/ray-fusion.png",
+      "award": "",
+      "links": {
+        "pdf": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03794.pdf",
+        "project": "https://arxiv.org/abs/2409.14935"
+      },
+      "domestic": 0
+    },
+    {
+      "title": "CostDCNet: Cost Volume based Depth Completion for a Single RGB-D Image",
+      "authors": [
+        "Jaewon Kam",
+        "Jungeon Kim",
+        "Soongjin Kim",
+        "Jaesik Park",
+        "Seungyong Lee"
+      ],
+      "venue": "European Conference on Computer Vision (ECCV), 2022",
+      "thumbnail": "images/thumbs/costdcnet.png",
+      "award": "",
+      "links": {
+        "pdf": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136620248.pdf",
+        "code": "https://github.com/kamse/CostDCNet"
+      },
+      "domestic": 0
+    },
+    {
+      "title": "Deep Deformable 3D Caricatures with Learned Shape Control",
+      "authors": [
+        "Yucheol Jung",
+        "Wonjong Jang",
+        "Soongjin Kim",
+        "Jiaolong Yang",
+        "Xin Tong",
+        "Seungyong Lee"
+      ],
+      "venue": "ACM SIGGRAPH 2022 Conference Proceedings",
+      "thumbnail": "images/thumbs/caricatures.png",
+      "award": "",
+      "links": {
+        "pdf": "https://arxiv.org/pdf/2207.14593",
+        "code": "https://github.com/ycjungSubhuman/DeepDeformable3DCaricatures",
+        "project": "https://ycjungsubhuman.github.io/DeepDeformable3DCaricatures/"
+      },
+      "domestic": 0
+    },
+    {
+      "title": "uvh-TensoRF: High-quality Mesh-based Neural Rendering",
+      "authors": [
+        "Soongjin Kim",
+        "Jooeun Son",
+        "Gwangjin Ju",
+        "Joo Ho Lee",
+        "Seungyong Lee"
+      ],
+      "venue": "Workshop on Image Processing and Image Understanding (IPIU), 2024",
+      "thumbnail": "images/thumbs/uvh-tensorf.svg",
+      "award": "",
+      "links": {},
+      "domestic": 1
+    },
+    {
+      "title": "Texture Reconstruction for View-dependent Colors",
+      "authors": [
+        "Soongjin Kim",
+        "Seungyong Lee"
+      ],
+      "venue": "Korea Computer Graphics Society Conference (KCGS), 2022",
+      "thumbnail": "images/thumbs/texture-recon.svg",
+      "award": "",
+      "links": {},
+      "domestic": 1
+    },
+    {
+      "title": "GC-NeRF: Geometric Constrained NeRF for Efficient Training",
+      "authors": [
+        "Wonjun Jin",
+        "Soongjin Kim",
+        "Jaesik Park",
+        "Seungyong Lee",
+        "Sunghyun Cho"
+      ],
+      "venue": "Workshop on Image Processing and Image Understanding (IPIU), 2022",
+      "thumbnail": "images/thumbs/gc-nerf.svg",
+      "award": "",
+      "links": {},
+      "domestic": 1
+    }
+  ]
+}

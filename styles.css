@@ -164,7 +164,6 @@ section {
   width: 125px;
   height: 125px;
   flex-shrink: 0;
-  border: 1px solid var(--border-color);
   overflow: hidden;
   cursor: pointer;
   position: relative;

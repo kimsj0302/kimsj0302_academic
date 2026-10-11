@@ -1,6 +1,25 @@
 {
   "publications": [
     {
+      "title": "LEGO: A Lifting-Free Approach for Exocentric-to-Egocentric Video Generation",
+      "authors": [
+        "Suhwan Cho*",
+        "Yonwoo Choi*",
+        "Soongjin Kim*",
+        "Jicheol Park",
+        "Taegyu Lim"
+      ],
+      "venue": "arXiv preprint, 2026",
+      "thumbnail": "images/thumbs/lego.mp4",
+      "award": "",
+      "links": {
+        "pdf": "https://arxiv.org/abs/2610.12442",
+        "code": "https://github.com/suhwan-cho/LEGO",
+        "project": "https://suhwan-cho.github.io/LEGO/"
+      },
+      "domestic": 0
+    },
+    {
       "title": "High-Quality Geometry and Texture Editing of Neural Radiance Field",
       "authors": [
         "Soongjin Kim",

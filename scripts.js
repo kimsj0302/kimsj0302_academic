@@ -4,6 +4,12 @@ let allPublications = [];
 // Name variants that should be highlighted as "me"
 const ME = ['Soongjin Kim', 'S. Kim', 'Soongji Kim'];
 
+// Treat an asset as a video when its path ends in a video extension
+const isVideo = (src) => /\.(mp4|webm|ogg)$/i.test(src || '');
+
+// Strip a trailing co-author marker (e.g. "*", "†") before comparing names
+const bareName = (author) => author.replace(/[*†‡]+\s*$/, '').trim();
+
 document.addEventListener('DOMContentLoaded', function () {
   loadPublications();
 
@@ -58,11 +64,22 @@ function createPublicationElement(publication) {
   thumbnail.className = 'pub-thumbnail';
   thumbnail.onclick = () => openModal(publication.thumbnail);
 
-  const thumbnailImg = document.createElement('img');
-  thumbnailImg.src = publication.thumbnail;
-  thumbnailImg.alt = `${publication.title} thumbnail`;
-  thumbnailImg.loading = 'lazy';
-  thumbnail.appendChild(thumbnailImg);
+  if (isVideo(publication.thumbnail)) {
+    const thumbnailVideo = document.createElement('video');
+    thumbnailVideo.src = publication.thumbnail;
+    thumbnailVideo.autoplay = true;
+    thumbnailVideo.loop = true;
+    thumbnailVideo.muted = true;
+    thumbnailVideo.playsInline = true;
+    thumbnailVideo.setAttribute('aria-label', `${publication.title} teaser`);
+    thumbnail.appendChild(thumbnailVideo);
+  } else {
+    const thumbnailImg = document.createElement('img');
+    thumbnailImg.src = publication.thumbnail;
+    thumbnailImg.alt = `${publication.title} thumbnail`;
+    thumbnailImg.loading = 'lazy';
+    thumbnail.appendChild(thumbnailImg);
+  }
 
   // Content
   const content = document.createElement('div');
@@ -78,7 +95,7 @@ function createPublicationElement(publication) {
   authors.className = 'pub-authors';
   authors.innerHTML = publication.authors
     .map((author) =>
-      ME.includes(author.trim())
+      ME.includes(bareName(author))
         ? `<span class="highlight-name">${author}</span>`
         : author
     )
@@ -127,18 +144,34 @@ function createPublicationElement(publication) {
   return pubItem;
 }
 
-// Image modal
-function openModal(imageSrc) {
+// Image / video modal
+function openModal(src) {
   const modal = document.getElementById('imageModal');
   const modalImg = document.getElementById('modalImage');
+  const modalVideo = document.getElementById('modalVideo');
   modal.style.display = 'block';
   setTimeout(() => modal.classList.add('show'), 10);
-  modalImg.src = imageSrc;
+
+  if (isVideo(src)) {
+    modalImg.style.display = 'none';
+    modalImg.src = '';
+    modalVideo.style.display = 'block';
+    modalVideo.src = src;
+    modalVideo.play().catch(() => {});
+  } else {
+    modalVideo.pause();
+    modalVideo.removeAttribute('src');
+    modalVideo.style.display = 'none';
+    modalImg.style.display = 'block';
+    modalImg.src = src;
+  }
 }
 
 function closeModal() {
   const modal = document.getElementById('imageModal');
+  const modalVideo = document.getElementById('modalVideo');
   modal.classList.remove('show');
+  if (modalVideo) modalVideo.pause();
   setTimeout(() => (modal.style.display = 'none'), 300);
 }
 

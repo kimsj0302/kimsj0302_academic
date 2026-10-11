@@ -172,14 +172,21 @@ section {
   box-shadow: 0 2px 8px var(--shadow-color);
 }
 
-.pub-thumbnail img {
+.pub-thumbnail img,
+.pub-thumbnail video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-time) ease;
 }
 
-.pub-thumbnail:hover img {
+/* Videos are usually wide — fit the full width so the sides aren't cropped */
+.pub-thumbnail video {
+  object-fit: contain;
+}
+
+.pub-thumbnail:hover img,
+.pub-thumbnail:hover video {
   transform: scale(1.08);
 }
 
